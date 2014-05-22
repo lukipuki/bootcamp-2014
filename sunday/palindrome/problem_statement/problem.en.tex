@@ -1,0 +1,30 @@
+\problemname{Palindrome}
+
+Mr.~F. just loves palindromes (a palindrome is a word that reads the same
+forwards and backwards). He got hold of his mom's solved
+crosswords and now he is looking for palindromes in them. The crosswords are somewhat unusual: each is an $n\times n$ grid with no black squares---every location contains a letter. Mr.~F.
+considers only sequences of letters that can be read by going
+right and down, that is, the next letter in the sequence
+is immediately to the right or below the current letter. Help him find the
+longest palindrome.
+
+\section*{Input}
+The first line contains $k$, the number of crosswords. Then $k$
+crossword descriptions follow. Each crossword description starts
+with a number $n\in\{1,\dots,100\}$. Then an $n\times n$ matrix
+of uppercase letters follows (there are $n$ letters in each
+row; the letters are not separated by spaces and the row ends with a new line).
+
+
+\section*{Output}
+The output contains $k$ lines, one for each crossword. The $i$-th
+line contains four items. The first item is one of the longest palindromes that occur in the $i$-th crossword.
+The second and third item specify the row and column coordinates of the first letter in the palindrome, with top left corner at coordinates 1,1.
+The fourth item is a string consisting of only letters R, D, and S that indicate how to move through the crossword to get the palindrome:
+starting at the specified location, move to the right if the current letter is R or down if the letter is D; stop at letter S, the last letter of the string.
+
+
+\section*{Note}
+A longest palindrome in the first sample input is ABABA. There are several occurrences of this palindrome, the sample output lists the one that starts at location 1,1 and then goes right-right-down-down.
+
+For the second sample input there are only palindromes of length 1. One such palindrome is B, that can be found at location 1,2.
