@@ -5,12 +5,11 @@ Johan Sannemo           | johan.sannemo@gmail.com
 Emil Lenngren           | emille@kth.se
 Emil Wärnberg           | emilwa@kth.se
 Anton Grensjö           | grensjo@kth.se
-Gustav Sennton          | gsennton@kth.se
 Joakim Blikstad         | jockemocke@gmail.com
 Emanuel Gedin           | emanuel.gedin@gmail.com
 Emma Nimstad            | emma@nimstad.net
 Aron Granberg           | aron.granberg@gmail.com
-Anders Ye               | qtkaze@gmail.com
+Alex Loiko              | alexandreloiko@gmail.com
 Bjarki Ágúst Guðmundsson| suprdewd@gmail.com
 Benjamin Ingberg        | benjamin.ingberg@gmail.com
 Henrik Adolfsson        | henad221@student.liu.se
@@ -19,3 +18,6 @@ Daniel Brinkers         | Daniel.Brinkers@cs.fau.de
 Tobias Polzer           | bulsa.t.polzer@studium.uni-erlangen.de
 Dominik Paulus          | dominik@d-paulus.de
 Julian Brost            | julian.brost@studium.fau.de
+Lukáš Poláček           | polacek@csc.kth.se
+Marc Vinyals            | vinyals@csc.kth.se
+Oskar Werkelin Ahlin    | osk@spotify.com
