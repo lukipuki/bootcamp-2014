@@ -1,0 +1,29 @@
+\problemname{Factor Solitaire}
+In the game of Factor Solitaire, you start with the number 1, and try to change it to some given
+target number $n$ by repeatedly using the following operation. In each step, if $c$ is your current
+number, you split it into two positive factors $a, b$ of your choice such that $c = a \cdot b$. You
+then add a to your current number $c$ to get your new current number. Doing this costs you $b$ points.
+You continue doing this until your current number is $n$, and you try to achieve this at the cost of
+a minimum total number of points.
+
+For example, here is one way to get to 15:
+\begin{itemize}
+\item start with 1
+\item change 1 to $1+1 = 2$, cost so far is 1
+\item change 2 to $2+1 = 3$, cost so far is $1+2$
+\item change 3 to $3+3 = 6$, cost so far is $1+2+1$
+\item change 6 to $6+6 = 12$, cost so far is $1+2+1+1$
+\item change 12 to $12+3 = 15$, done, total cost is $1+2+1+1+4=9$.
+\begin{itemize}
+
+In fact, this is the minimum possible total cost to get 15. You want to compute the minimum total
+cost for other target end numbers.
+
+\section*{Input}
+The input consists of a single integer $N \ge 1$. In at least half of the cases $N \le 50\,000$, in
+at least another quarter of the cases $N \le 500\,000$, and in the remaining cases $N \le
+5\,000\,000$.
+
+
+\section*{Output}
+Compute the minimum cost that gets you to $N$.
