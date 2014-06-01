@@ -5,11 +5,11 @@ level, an integer between 1 and 1 000 000 000. In every head-to-head match, the 
 the larger skill level wins and moves on, while the other is eliminated from the tourney. It is
 guaranteed that, at any time, the skill levels of all competitors are distinct, so there are no ties.
 
-There are $2^N (1 \le N \le 20)$ competitor positions in the tourney tree, numbered $1, 2, \dots,
-2^N$ from left to right. In the first round, competitors 1 and 2 face off in a furniture disassembly
-race, as do competitors 3 and 4, etc. In each subsequent round, the winners of the first two matches
-from the previous round compete, as do the winners of the following two, etc. After $N$ rounds, a
-single winner remains. For example, when $N = 2$, the tourney tree looks like this:
+There are $2^N$ competitor positions in the tourney tree, numbered $1, 2, \dots, 2^N$ from left to
+right. In the first round, competitors 1 and 2 face off in a furniture disassembly race, as do
+competitors 3 and 4, etc. In each subsequent round, the winners of the first two matches from the
+previous round compete, as do the winners of the following two, etc. After $N$ rounds, a single
+winner remains. For example, when $N = 2$, the tourney tree looks like this:
 
 \begin{figure}[h]
     \begin{center}
@@ -24,8 +24,7 @@ Because of sponsorship contracts, some competitors will be replaced over time. A
 comes in, a new tourney is held.
 
 In order to help Don Cherry, you must write a program to compute certain tourney statistics at
-various points in time, given a sequence of $M$ $(1 \le M \le 1\,000\,000)$ commands -- see the input
-format below.
+various points in time, given a sequence of $M$ commands -- see the input format below.
 
 \section*{Input}
 The first line of input contains two integers, $N$ $(1 \le N \le 20)$ and $M$ $(1 \le M \le
@@ -43,6 +42,8 @@ position $i$ (between 1 and $2^N$) of this competitor.
 \item “S $i$” means that your program should print out the number of rounds that the competitor at
 position $i$ won in the current tourney.
 \end{itemize}
+
+For partial credit, you may assume that $N\le 10$.
 
 \section*{Output}
 For each ``W'' or ``S $i$'' command in the input, print out the corresponding integer on a line by

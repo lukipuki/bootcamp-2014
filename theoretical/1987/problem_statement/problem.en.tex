@@ -6,7 +6,11 @@ digits, since the digit 2 is repeated.
 Given a year, what is the next year with distinct digits?
 
 \section*{Input}
-The input consists of one integer $Y$ $(0 \le Y \le 10\,000)$, representing the starting year.
+The input starts with integer $N, 1\le N \le 100\,000$ denoting the number of years in the input.
+The next $N$ lines contain an integer $Y$ $(0 \le Y \le 10^8)$, representing the starting year.
+
+For partial credit, you may assume that $Y\le 10^6$ and $N\le 10$.
 
 \section*{Output}
-The output will be the single integer $D$, which is the next year after $Y$ with distinct digits.
+For each year $Y$ in the input print a line with integer $D$, which is the next year after $Y$ with
+distinct digits.

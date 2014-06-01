@@ -1,0 +1,32 @@
+\problemname{All Your Base Are Belong to Palindromes}
+Most of the time, humans have 10 fingers. This fact is the main reason that our numbering system is
+base-10: the number 257 really means $2 \times 10^2 + 5 \times 10^1 + 7 \times 10^0$. Notice that
+each digit in base-10 is in the range from $0, \dots,  9$.
+
+Of course, there are other bases we can use: binary (base-2), octal (base-8) and hexadecimal
+(base-16) are common bases that really cool people use when trying to impress others. In base-$b$,
+the digits are in the range from $0, \dots, b - 1$, with each digit (when read from right to left)
+being the multiplier of the next larger power of $b$.
+
+So, for example 9 (in base-10) is:
+\begin{itemize}
+  \item 9 in base-16
+  \item 11 in base-8 ($1 \times 8^1 + 1 \times 8^0 = 9$)
+  \item 1001 in base-2 ($1 \times 2^3 + 0 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 9$)
+\end{itemize}
+
+Noticing the above, you can see that 9 is a palindrome in these 3 different bases. A palindrome is
+a sequence which is the same even if it was written in reverse order: English words such as “dad”,
+“mom” and “racecar” are palindromes, and numbers like 9, 11, 1001 are also palindromes.
+
+Given a particular number $X$ (in base-10), for what bases $b$ $(2 \le b < X)$ is the representation
+of $X$ in base-$b$ a palindrome?
+
+\section*{Input}
+There will be one line, containing the integer $X$ $(2 \le X \le 1\,000\,000\,000\,000)$.
+For partial credit, you may assume $X \le 100\,000$.
+
+\section*{Output}
+The output should consist of a sequence of increasing integers, each on its own line, indicating
+which bases have the property that $X$ written in that base is a palindrome. Note that we will only
+concern ourselves with bases which are less than $X$, and that the first possible valid base is 2.
