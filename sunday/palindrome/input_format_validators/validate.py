@@ -15,6 +15,7 @@ string = re.compile("[a-z]+\n")
 line = stdin.readline()
 assert oneint.match(line)
 k = int(line)
+assert k <= 10
 
 for test in range(k):
     line = stdin.readline()

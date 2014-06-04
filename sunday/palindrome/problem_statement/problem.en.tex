@@ -9,9 +9,9 @@ is immediately to the right or below the current letter. Help him find the
 longest palindrome.
 
 \section*{Input}
-The first line contains $k$, the number of crosswords. Then $k$
+The first line contains $k, 1\le k \le 10$, the number of crosswords. Then $k$
 crossword descriptions follow. Each crossword description starts
-with a number $n\in\{1,\dots,100\}$. Then an $n\times n$ matrix
+with a number $1\le n\le 100$. Then an $n\times n$ matrix
 of uppercase letters follows (there are $n$ letters in each
 row; the letters are not separated by spaces and the row ends with a new line).
 
@@ -19,7 +19,8 @@ row; the letters are not separated by spaces and the row ends with a new line).
 \section*{Output}
 The output contains $k$ lines, one for each crossword. The $i$-th
 line contains four items. The first item is one of the longest palindromes that occur in the $i$-th crossword.
-The second and third item specify the row and column coordinates of the first letter in the palindrome, with top left corner at coordinates 1,1.
+The second and third item specify the row and column coordinates of the first letter in the
+palindrome, with top left corner at coordinates $(1,1)$.
 The fourth item is a string consisting of only letters R, D, and S that indicate how to move through the crossword to get the palindrome:
 starting at the specified location, move to the right if the current letter is R or down if the letter is D; stop at letter S, the last letter of the string.
 
@@ -27,4 +28,5 @@ starting at the specified location, move to the right if the current letter is R
 \section*{Note}
 A longest palindrome in the first sample input is ABABA. There are several occurrences of this palindrome, the sample output lists the one that starts at location 1,1 and then goes right-right-down-down.
 
-For the second sample input there are only palindromes of length 1. One such palindrome is B, that can be found at location 1,2.
+For the second sample input there are only palindromes of length 1. One such palindrome is B, that
+can be found at location $(1,2)$.
