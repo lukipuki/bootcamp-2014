@@ -20,7 +20,7 @@ for test in range(k):
     line = stdin.readline()
     assert oneint.match(line)
     n = int(line)
-    assert 1 <= n <= 20
+    assert 1 <= n <= 10
     expect = re.compile("[01]( [01]){{{}}}\n".format(n-1))
     for i in range(n):
         line = stdin.readline()
