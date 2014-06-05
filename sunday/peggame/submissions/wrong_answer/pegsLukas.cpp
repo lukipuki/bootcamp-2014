@@ -42,9 +42,9 @@ void imprMax(int &a, int b)
 }
 typedef vector<int> vi;
 int n;
-int in[28][28][28][28];
-int on[28][28][28][28];
-int p[28][28][28][28];
+int in[10][10][10][10];
+int on[10][10][10][10];
+int p[10][10][10][10];
 int gx, gy;
 int go(int i, int j, int u, int v, double angle)
 {
