@@ -3,15 +3,13 @@
 \v{Z}ofka invented a new word puzzle. She gives you two strings $s_1$ and $s_2$ of the same length. You need to modify $s_1$ into $s_2$ as quickly as possible. The trick is that you are allowed to modify the strings only using the following types of moves: (1) shift forward where you choose a substring of one of the strings and shift each of its letters by 1 forward in the alphabet, or (2) shift backward where you shift each letter in a substring backward in the alphabet. The first move is not allowed if the substring contains the letter {\tt z} while the second move is not allowed if the subtring contains {\tt a}. What is the smallest number of moves you need to modify $s_1$ into $s_2$?
 
 \section*{Input}
-The first line contains $k$, the number of word puzzles.
 Each word puzzle is described on a single line that contains the strings $s_1$ and $s_2$ separated
 by space. The strings contain only lower case letters. You may also assume that the length of each
 string is at most $10\,000\,000$.
 
 
 \section*{Output}
-The output contains $k$ lines. The $i$-th line corresponds to the $i$-th word puzzle.
-It contains the smallest number of moves needed to modify $s_1$ into $s_2$.
+Output one line with the smallest number of moves needed to modify $s_1$ into $s_2$.
 
 
 \section*{Note}
