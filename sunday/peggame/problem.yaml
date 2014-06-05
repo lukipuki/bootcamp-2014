@@ -4,8 +4,8 @@ author: Daniel Stefankovic
 rights_owner: University of Rochester
 license: cc by-sa
 
-# limits:
-#    time_multiplier: 10
+limits:
+   time_multiplier: 3
 #    time_safety_margin: 2
 #    memory: 4096
 #    output: 16
