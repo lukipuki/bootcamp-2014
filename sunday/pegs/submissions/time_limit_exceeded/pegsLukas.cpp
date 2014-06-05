@@ -52,12 +52,10 @@ int go(int i, int j, int u, int v, double angle)
     if (res != -123456) return res;
 
     if (u == gx && v == gy)
-    {
         return res = -on[u][v][i][j];
-    }
 
     vekt x(i, j), y(u, v);
-    rep(s,0,n) rep(t,0,n) if (in[u][v][s][t] > -123456)
+    rep(s,gx,n) rep(t,0,n) if (in[u][v][s][t] > -123456)
     {
         vekt z(s, t);
         if (vs(y - x, z - y) > 0)
@@ -108,7 +106,7 @@ int main()
         rep(k,0,n) rep(l,0,n) if (a[k][l])
         {
             imprMax(res, 1);
-            rep(i,0,n) rep(j,0,n) rep(u,0,n) rep(v,0,n)
+            rep(i,k,n) rep(j,k,n) rep(u,0,n) rep(v,0,n)
             {
                 p[i][j][u][v] = -123456;
                 in[i][j][u][v] = -123456;
@@ -127,7 +125,6 @@ int main()
                 }
 
                 in[i][j][u][v] -= on[k][l][i][j] + on[k][l][u][v] + on[i][j][u][v] + 3;
-                //subtract 3 for corners
             }
 
             rep(i,k,n) rep(j,0,n)
@@ -138,7 +135,7 @@ int main()
             rep(i,k,n) rep(j,0,n) if (a[i][j] && (i != k || j != l))
             {
                 vekt z(i, j);
-                imprMax(res, go(k, l, i, j, ang(y - x, z - y)) + 1); //+1 for (k, l), +1 for other two vertices
+                imprMax(res, go(k, l, i, j, ang(y - x, z - y)) + 1); //+1 for (k, l)
             }
         }
         printf("%d\n", res);

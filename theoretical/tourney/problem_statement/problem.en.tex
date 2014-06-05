@@ -1,13 +1,13 @@
 \problemname{Tourney}
 Don Cherry has been hired to run 24-hour coverage of a series of single-elimination, bracket-style,
 furniture disassembly tourneys (tournaments). Each competitor has a furniture disassembly skill
-level, an integer between 1 and 1 000 000 000. In every head-to-head match, the competitor with
+level, an integer between $1$ and $1\,000\,000\,000$. In every head-to-head match, the competitor with
 the larger skill level wins and moves on, while the other is eliminated from the tourney. It is
 guaranteed that, at any time, the skill levels of all competitors are distinct, so there are no ties.
 
 There are $2^N$ competitor positions in the tourney tree, numbered $1, 2, \dots, 2^N$ from left to
-right. In the first round, competitors 1 and 2 face off in a furniture disassembly race, as do
-competitors 3 and 4, etc. In each subsequent round, the winners of the first two matches from the
+right. In the first round, competitors $1$ and $2$ face off in a furniture disassembly race, as do
+competitors $3$ and $4$, etc. In each subsequent round, the winners of the first two matches from the
 previous round compete, as do the winners of the following two, etc. After $N$ rounds, a single
 winner remains. For example, when $N = 2$, the tourney tree looks like this:
 
@@ -33,7 +33,7 @@ The first line of input contains two integers, $N$ $(1 \le N \le 20)$ and $M$ $(
 The next $2^N$ lines, for $i$ from $1$ to $2^N$, each contain one integer $S_i$, indicating the
 skill level of the initial competitor at position $i$ in the tourney tree.
 
-Each of the following M lines will be a command in one of three formats:
+Each of the following $M$ lines will be a command in one of three formats:
 \begin{itemize}
 \item ``R $i$ $S$'' means that the competitor at position $i$ is removed, and replaced with a new
 one with skill level $S$. A new tourney is then held.
