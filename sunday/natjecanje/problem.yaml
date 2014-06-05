@@ -1,0 +1,17 @@
+source: "Croatian Open Competition in Informatics 2009/2010, contest #6"
+source-url: http://hsin.hr/coci/archive/2009_2010
+# author:
+rights_owner: Hrvatski savez informatičara
+license: educational
+
+#limits:
+#    time_multiplier: 5
+#    time_safety_margin: 2
+#    memory: 4096
+#    output: 16
+#    compilation_time: 240
+#    validation_time: 240
+#    validation_memory: 3072
+#    validation_output: 4
+#validator_flags: space_change_sensitive float_absolute_tolerance 1e-6
+#validation: custom
